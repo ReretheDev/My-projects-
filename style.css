@@ -1,0 +1,116 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif
+}
+body{
+  background:#8E97FF
+}
+.wrapper{
+  position: absolute;
+  width:90vw;
+  max-width: 28em;
+  transform:translate(-50%,-50%);
+  top:50%;
+  left:50%;
+  font-size: 1em
+}
+.container{
+  width:100%;
+  background:rgba(255,255,255,0.13);
+  padding: 3em;
+  border-radius: 0.6em;
+  backdrop-filter: blur(70px);
+  color:#fff;
+  
+}
+input{
+  background:rgba(255,255,255,0.5);
+  border:none;
+  outline:none;
+  color:#CF62FF;
+font-size:18px;
+font-weight: 700
+}
+.input-wrapper input{
+  display:block;
+  padding: 0.6em 0.5em;
+  width:100%;
+  border-radius: 0.5rem
+ 
+}
+.input-wrapper:not(:last-child) input{
+  margin-bottom: 1.5rem
+}
+h2{
+  margin-bottom:1.5rem;
+  text-align: center
+}
+label{
+  display:block;
+  margin-bottom: 0.5rem
+}
+.box p{
+  margin-top: 80px
+}
+.loader{
+  width:100vw;
+  height:100vh;
+  background:#000;
+  position:fixed;
+  z-index:100;
+  color:#fff;
+}
+.loader .box{
+  width:200px;
+  height:200px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left:50%;
+  top:50%;
+  display:grid;
+  justify-content: center;
+  align-items: center;
+
+}
+p{
+  text-align: center;
+}
+.box .spinner{
+  
+  width:100px;
+  height:100px;
+ mix-blend-mode: color-burn;
+ animation:2s linear infinite spin;
+ 
+}
+footer{
+  position: relative;
+  top:85%;
+  display:flex;
+ align-items: center;
+ justify-content: center;
+ text-transform: uppercase;
+ font-weight: 700
+  
+}
+@keyframes spin{
+  10%{
+    
+  }
+  30%{
+    
+  }
+  50%{
+    transform: translateY(-50%);
+  }
+  70%{
+    
+  }
+ 
+  100%{
+    transform: translateY(50%);
+  
+  }
+}

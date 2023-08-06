@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Simple Weight converter-Web app</title>
+  <title>Simple Palindrome Checker Web app</title>
   
   <!-- HTML -->
   
@@ -16,33 +16,20 @@
 
 <body>
   <div class="loader" id="loader">
-    <div class="box">
-     <img src="rocket.png" alt="" class="spinner">
-          <p>Loading...</p>
+    <div class="spin">
+      
     </div>
-
-    <footer>
-      <p>Built with ♥️&💡 by Kronos.</p>
-    
-    </footer>
+  <div class="p">
+    <p>Loading...</p>
   </div>
-  <div class="wrapper">
-    
-    <div class="container">
-      <h2>Weight Converter</h2>
-      <div class="input-wrapper">
-        <label for="kg">Kilograms:</label>
-        <input type="number" name="" id="kg" value="10">
-      </div>
-      <div class="input-wrapper">
-        <label for="lb">Pounds:</label>
-        <input type="number" name="" id="lb" >
-      </div>
-      <div class="input-wrapper">
-        <label for="oz">Ounces:</label>
-        <input type="number" name="" id="oz" >
-      </div>
+  </div>
+  <div class="container">
+    <h2 class="app-title">Is it a Palindrome ?</h2>
+    <div class="input-wrapper">
+      <input type="text" id="input-text" placeholder="Enter Word">
+      <button>Check</button>
     </div>
+    <p id="result"></p>
   </div>
   <script src="main.js"></script>
 </body>
